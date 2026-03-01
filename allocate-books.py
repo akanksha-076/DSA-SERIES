@@ -1,3 +1,19 @@
+def can_allocate(arr, m, max_pages):
+    students = 1
+    current_sum = 0
+
+    for pages in arr:
+        if current_sum + pages <= max_pages:
+            current_sum += pages
+        else:
+            students += 1
+            current_sum = pages
+
+            if students > m:
+                return False
+
+    return True
+
 
 def allocate_books(arr, m):
     low = max(arr)
@@ -9,7 +25,7 @@ def allocate_books(arr, m):
 
         if can_allocate(arr, m, mid):
             answer = mid
-            high = mid - 1   # try smaller
+            high = mid - 1
         else:
             low = mid + 1
 

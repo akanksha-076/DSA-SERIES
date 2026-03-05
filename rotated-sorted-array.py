@@ -20,10 +20,7 @@ def search_rotated(arr, target):
                 low = mid + 1
             else:
                 high = mid - 1
-
     return -1
-
-
 arr = [4,5,6,7,0,1,2]
 target = 0
 

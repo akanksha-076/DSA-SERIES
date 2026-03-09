@@ -1,12 +1,16 @@
 rows = 3
 column = 3
-firstMatrix = []
+Matrix = []
 
 for i in range(rows):
     rowArray = []
     for j in range(column):
-        rowArray.append(j) # This adds the number 3
-    firstMatrix.append(rowArray)
+        rowArray.append(j) 
+    Matrix.append(rowArray)
 
-print(firstMatrix)
+print(Matrix)
 
+for i in range(rows):
+    for j in range(column):
+        print(Matrix[i][j],end=" ")
+    print()

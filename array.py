@@ -11,7 +11,6 @@ for i in range(rows):
 print(Matrix)
 
 # traversing the array
-
 for i in range(rows):
     for j in range(column):
         print(Matrix[i][j],end=" ")

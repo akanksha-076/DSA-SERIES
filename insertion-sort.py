@@ -7,6 +7,5 @@ def insertion_sort(arr):
             j -= 1
         arr[j + 1] = key
     return arr
-
 # Example
 print(insertion_sort([5, 3, 8, 4, 2]))

@@ -8,7 +8,7 @@ def first_occurrence(arr, target):
 
         if arr[mid] == target:
             ans = mid
-            high = mid - 1   # move left
+            high = mid - 1  
         elif arr[mid] < target:
             low = mid + 1
         else:

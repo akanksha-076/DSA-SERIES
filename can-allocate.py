@@ -11,5 +11,4 @@ def can_allocate(arr, m, max_pages):
 
             if students > m:
                 return False
-
     return True
